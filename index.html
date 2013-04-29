@@ -15,7 +15,21 @@
     </div>
     <script src="components/angular/angular.min.js"></script>
     <script>
+      (function () {
+        app = angular.module('app');
 
+        app.controller('GridController', ['$scope'], function ($scope) {
+
+        });
+
+        app.directive('gridTile', [], function () {
+          return {
+            link: function ($scope, $element) {
+
+            }
+          }
+        });
+      });
     </script>
   </body>
 </html>
